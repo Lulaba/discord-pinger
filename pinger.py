@@ -10,7 +10,7 @@ client = discord.Client()
 
 keywords = ["fuck","shit","hello"] #SET YOUR KEY WORDS HERE
 
-#FUNKO
+
 @client.event
 async def on_message(message):
     for keyword in keywords:
