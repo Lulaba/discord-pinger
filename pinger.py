@@ -14,7 +14,7 @@ keywords = ["fuck","shit","hello"] #SET YOUR KEY WORDS HERE
 @client.event
 async def on_message(message):
     for keyword in keywords:
-        if message.content == keyword and message.channel.name == "rules": # SET YOUR CHANNEL NAME HERE
+        if keyword in message.content and message.channel.name == "rules": # SET YOUR CHANNEL NAME HERE
             await client.send_message(message.channel,"@everyone - keyword matched") #SET YOUR MESSAGE HERE YOU WANT TO USE     
 
 
